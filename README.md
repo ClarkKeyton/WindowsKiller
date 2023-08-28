@@ -1,2 +1,2 @@
 # WindowsKiller
-WindowsKiller by ClarkKeyton
+WindowsKiller by ClarkKeyton(Very Simple Calling BSOD)
