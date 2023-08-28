@@ -1,0 +1,6 @@
+﻿  WinKiller.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 12 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  WindowsKiller.vcxproj -> D:\VS2022 Projects\WindowsKiller\x64\Release\WindowsKiller.exe
